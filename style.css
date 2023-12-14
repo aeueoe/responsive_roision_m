@@ -1,0 +1,256 @@
+body {
+  font-family: "Urbanist", sans-serif;
+  background: repeating-linear-gradient(
+    to right,
+    #025ca1,
+    #025ca1 30px,
+    #d61922 30px,
+    #d61922 60px
+  );
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.6)),
+    url("./img/roisin_murphy_header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header h3::before,
+header h3::after {
+  content: "|";
+  color: #d61922;
+}
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #025ca1;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  transition: all 200ms ease-in-out;
+}
+header a:hover {
+  opacity: 0.6;
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #025ca1;
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #025ca1;
+  margin: 0;
+}
+
+main h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #025ca1;
+  margin: 0;
+}
+
+main p {
+  text-align: justify;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  color: black;
+  opacity: 0.6;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background: #f8f8f8;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.555),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("./img/Color+Logo.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.youtube-embeds {
+  margin: 40px 0;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+  main h2 {
+    text-align: center;
+  }
+
+  main h3 {
+    text-align: center;
+  }
+  main h4 {
+    text-align: center;
+  }
+}
